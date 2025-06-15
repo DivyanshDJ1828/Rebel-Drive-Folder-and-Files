@@ -28,6 +28,7 @@ import logging
 import re
 import argparse
 import sys
+import webbrowser
 from datetime import datetime
 from pathlib import Path
 
@@ -291,6 +292,7 @@ def get_execution_mode(args):
         return 1  # Default to Normal Mode
     
     # Interactive mode selection
+    print("version={0}".format(__version__))
     print("\n" + "="*80)
     print("🎯 Template Folder Fixer - Mode Selection")
     print("="*80)
@@ -298,16 +300,35 @@ def get_execution_mode(args):
     for mode_num, description in EXECUTION_MODES.items():
         print(f"{mode_num} - {description}")
     print("="*80)
+    print("Just press Enter to open the README file in your browser.")
+    print("="*80)
     
     while True:
         try:
-            choice = input("Enter your choice (1-4): ").strip()
+            choice = input("Enter your choice (1-4) or press Enter for README: ").strip()
+            
+            # If user presses Enter without input, open README
+            if choice == "":
+                print("📖 Opening README in your browser...")
+                try:
+                    webbrowser.open("https://github.com/DivyanshDJ1828/Rebel-Drive-Folder-and-Files/blob/a61e1ff5866527c017359177915bb9d57e01d3de/SubFolderCreater/README.md")
+                except Exception as e:
+                    print(f"❌ Could not open browser: {e}")
+                    print("📖 Please visit: https://github.com/DivyanshDJ1828/Rebel-Drive-Folder-and-Files/blob/a61e1ff5866527c017359177915bb9d57e01d3de/SubFolderCreater/README.md")
+                
+                # Exit gracefully after opening README
+                print("\n👋 Exiting. Run the script again after reading the README.")
+                sys.exit(0)
+            
+            # If user enters a valid mode number
             mode = int(choice)
             if mode in EXECUTION_MODES:
                 return mode
             else:
                 print("❌ Invalid choice. Please enter 1, 2, 3, or 4.")
-        except (ValueError, KeyboardInterrupt):
+        except ValueError:
+            print("❌ Invalid input. Please enter a number (1-4) or press Enter for README.")
+        except KeyboardInterrupt:
             print("\n❌ Operation cancelled by user.")
             sys.exit(0)
 
