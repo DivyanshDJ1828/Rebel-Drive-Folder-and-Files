@@ -1,0 +1,35 @@
+# -*- mode: python ; coding: utf-8 -*-
+
+# Version information embedded into the .exe file
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(1, 1, 0, 0),            # File version (major, minor, build, revision)
+    prodvers=(1, 1, 0, 0),            # Product version
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,                       # VOS_NT_WINDOWS32
+    fileType=0x1,                     # VFT_APP
+    subtype=0x0,
+    date=(0, 0)
+  ),
+  kids=[
+    StringFileInfo([
+      StringTable(
+        '040904B0',                   # Language and code page (US English, Unicode)
+        [
+          StringStruct('CompanyName', 'Divyansh Jaiswal'),
+          StringStruct('FileDescription', 'Template Folder Fixer Utility'),
+          StringStruct('FileVersion', '1.1.0.0'),
+          StringStruct('InternalName', 'Template_Folder_fixer'),
+          StringStruct('LegalCopyright', '© 2025 Divyansh Jaiswal'),
+          StringStruct('OriginalFilename', 'Template_Folder_fixer.exe'),
+          StringStruct('ProductName', 'Template Folder Fixer'),
+          StringStruct('ProductVersion', '1.1.0.0')
+        ]
+      )
+    ]),
+    VarFileInfo([
+      VarStruct('Translation', [1033, 1200])   # 1033 = English (US), 1200 = Unicode
+    ])
+  ]
+)

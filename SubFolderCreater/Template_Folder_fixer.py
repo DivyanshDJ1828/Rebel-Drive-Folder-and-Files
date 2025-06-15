@@ -2,25 +2,32 @@
 """
 =============================================================================
 Script Name: Template_Folder_fixer.py
-Version: 1.0
+Version: 1.1
 Author: Divyansh Jaiswal
 Created On: 2025-06-15
 Source Migration: Create_Standard_Subfolders.bat → Python
-Spec Source: Template_Folder_fixer_v1.0.md
+Spec Source: Template_Folder_fixer_v1.1.md
 
 Purpose: Automate organization of production files through:
 1. Root File Sorter (RFS): Move misplaced files using priority-based matching
 2. Subfolder Structure: Create standardized folder organization
+3. Execution Modes: Normal, Overwrite, Cleanup+Normal, Reset+Overwrite
 
 Requirements: Python 3.11+, Standard libraries only
 =============================================================================
 """
+
+__version__ = "1.1"
+__author__ = "Divyansh Jaiswal"
+__description__ = "Template folder fixer for standardizing design folder structure with safe sorting, cleanup, and logging logic."
 
 import os
 import shutil
 import time
 import logging
 import re
+import argparse
+import sys
 from datetime import datetime
 from pathlib import Path
 
@@ -129,13 +136,60 @@ SUPPORTED_EXTENSIONS = []
 for extensions in EXTENSION_MAPPING.values():
     SUPPORTED_EXTENSIONS.extend(extensions)
 
+# Execution modes
+EXECUTION_MODES = {
+    1: "Normal Mode: Move misplaced files without overwriting anything",
+    2: "Overwrite Mode: Same as Normal but overwrite existing files", 
+    3: "Cleanup + Normal Mode: Delete subfolders inside component folders and reorganize files",
+    4: "Reset + Overwrite Mode: Cleanup all folders and overwrite duplicates"
+}
+
+# =============================================================================
+# ARGUMENT PARSING
+# =============================================================================
+
+def parse_arguments():
+    """Parse command line arguments."""
+    parser = argparse.ArgumentParser(
+        description=f"Template Folder Fixer v{__version__} - {__description__}",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Execution Modes:
+  1 - Normal Mode: Move misplaced files without overwriting
+  2 - Overwrite Mode: Same as Normal but overwrite existing files
+  3 - Cleanup + Normal Mode: Delete subfolders and reorganize files
+  4 - Reset + Overwrite Mode: Cleanup all folders and overwrite duplicates
+
+Examples:
+  python Template_Folder_fixer.py
+  python Template_Folder_fixer.py --mode 2 --dry-run
+  python Template_Folder_fixer.py --no-prompt --log-dir ./logs
+        """
+    )
+    
+    parser.add_argument('--version', action='version', version=f'Template Folder Fixer v{__version__}')
+    parser.add_argument('--mode', type=int, choices=[1, 2, 3, 4], 
+                       help='Execution mode (1-4). If not specified, interactive prompt will be shown.')
+    parser.add_argument('--dry-run', action='store_true', 
+                       help='Simulate file operations without actual move/delete')
+    parser.add_argument('--no-prompt', action='store_true', 
+                       help='Skip execution confirmation prompt (defaults to Mode 1 if --mode not specified)')
+    parser.add_argument('--log-dir', type=str, default=None,
+                       help='Custom directory for log file (default: current directory)')
+    
+    return parser.parse_args()
+
 # =============================================================================
 # LOGGING SETUP
 # =============================================================================
 
-def setup_logging():
+def setup_logging(log_dir=None, mode=1, dry_run=False):
     """Setup logging configuration for the script."""
-    log_file = "template_fixer_log.txt"
+    if log_dir:
+        os.makedirs(log_dir, exist_ok=True)
+        log_file = os.path.join(log_dir, "template_fixer_log.txt")
+    else:
+        log_file = "template_fixer_log.txt"
     
     # Configure logging
     logging.basicConfig(
@@ -147,7 +201,15 @@ def setup_logging():
         ]
     )
     
-    return logging.getLogger(__name__)
+    logger = logging.getLogger(__name__)
+    
+    # Log execution mode and settings
+    mode_name = EXECUTION_MODES.get(mode, f"Unknown Mode {mode}")
+    dry_run_text = " (DRY RUN)" if dry_run else ""
+    logger.info(f"[{get_timestamp()}] 🚀 Template Folder Fixer v{__version__} started")
+    logger.info(f"[{get_timestamp()}] 🎯 Execution Mode: {mode} - {mode_name}{dry_run_text}")
+    
+    return logger
 
 # =============================================================================
 # UTILITY FUNCTIONS
@@ -206,6 +268,35 @@ def extract_filename_components(filename):
         'basefit': basefit
     }
 
+def get_execution_mode(args):
+    """Get execution mode from arguments or user input."""
+    if args.mode:
+        return args.mode
+    
+    if args.no_prompt:
+        return 1  # Default to Normal Mode
+    
+    # Interactive mode selection
+    print("\n" + "="*80)
+    print("🎯 Template Folder Fixer - Mode Selection")
+    print("="*80)
+    print("Choose a mode:")
+    for mode_num, description in EXECUTION_MODES.items():
+        print(f"{mode_num} - {description}")
+    print("="*80)
+    
+    while True:
+        try:
+            choice = input("Enter your choice (1-4): ").strip()
+            mode = int(choice)
+            if mode in EXECUTION_MODES:
+                return mode
+            else:
+                print("❌ Invalid choice. Please enter 1, 2, 3, or 4.")
+        except (ValueError, KeyboardInterrupt):
+            print("\n❌ Operation cancelled by user.")
+            sys.exit(0)
+
 # =============================================================================
 # CORE FUNCTIONS
 # =============================================================================
@@ -258,26 +349,85 @@ def find_matching_folder(filename, folder_list):
     # Step 4: [NONE] - No match found
     return None, "NONE"
 
-def move_file_safely(source_path, dest_path, match_type):
+def move_file_safely(source_path, dest_path, match_type, allow_overwrite=False, dry_run=False):
     """Move file safely with comprehensive error handling."""
     logger = logging.getLogger(__name__)
     
     try:
         # Check if destination file already exists
         if os.path.exists(dest_path):
-            logger.info(f"[{get_timestamp()}] [{match_type}] ⚠️ File already exists, skipping: {source_path}")
-            return "skipped"
+            if not allow_overwrite:
+                logger.info(f"[{get_timestamp()}] [{match_type}] ⚠️ File already exists, skipping: {source_path}")
+                return "skipped"
+            else:
+                if dry_run:
+                    logger.info(f"[{get_timestamp()}] [{match_type}] 🔄 Would overwrite: {source_path} → {dest_path}")
+                    return "would_overwrite"
+                else:
+                    logger.info(f"[{get_timestamp()}] [{match_type}] 🔄 Overwriting: {source_path} → {dest_path}")
         
-        # Attempt to move file
-        shutil.move(source_path, dest_path)
-        logger.info(f"[{get_timestamp()}] [{match_type}] 📁 Moved: {source_path} → {dest_path}")
-        return "moved"
+        # Perform move operation
+        if dry_run:
+            logger.info(f"[{get_timestamp()}] [{match_type}] 📁 Would move: {source_path} → {dest_path}")
+            return "would_move"
+        else:
+            shutil.move(source_path, dest_path)
+            logger.info(f"[{get_timestamp()}] [{match_type}] 📁 Moved: {source_path} → {dest_path}")
+            return "moved"
         
     except Exception as e:
         logger.error(f"[{get_timestamp()}] [{match_type}] ❌ Move failed: {source_path} → {dest_path} | Error: {e}")
         return "failed"
 
-def create_standard_folders(folder_path):
+def cleanup_standard_folders(folder_path, dry_run=False):
+    """Delete standard subfolders and move their contents to parent folder."""
+    logger = logging.getLogger(__name__)
+    moved_count = 0
+    
+    for subfolder_name in STANDARD_FOLDERS:
+        subfolder_path = os.path.join(folder_path, subfolder_name)
+        
+        if os.path.exists(subfolder_path) and os.path.isdir(subfolder_path):
+            try:
+                # Move all files from subfolder to parent
+                for filename in os.listdir(subfolder_path):
+                    file_path = os.path.join(subfolder_path, filename)
+                    
+                    # Skip directories
+                    if os.path.isdir(file_path):
+                        continue
+                    
+                    dest_path = os.path.join(folder_path, filename)
+                    
+                    # Check if destination exists
+                    if os.path.exists(dest_path):
+                        if dry_run:
+                            logger.info(f"[{get_timestamp()}] 🧹 Would skip cleanup move (file exists): {file_path}")
+                        else:
+                            logger.info(f"[{get_timestamp()}] 🧹 Cleanup skip (file exists): {file_path}")
+                        continue
+                    
+                    # Move file
+                    if dry_run:
+                        logger.info(f"[{get_timestamp()}] 🧹 Would cleanup move: {file_path} → {dest_path}")
+                    else:
+                        shutil.move(file_path, dest_path)
+                        logger.info(f"[{get_timestamp()}] 🧹 Cleanup moved: {file_path} → {dest_path}")
+                        moved_count += 1
+                
+                # Remove empty subfolder
+                if dry_run:
+                    logger.info(f"[{get_timestamp()}] 🧹 Would delete folder: {subfolder_path}")
+                else:
+                    os.rmdir(subfolder_path)
+                    logger.info(f"[{get_timestamp()}] 🧹 Deleted folder: {subfolder_path}")
+                    
+            except Exception as e:
+                logger.error(f"[{get_timestamp()}] ❌ Cleanup failed for {subfolder_path}: {e}")
+    
+    return moved_count
+
+def create_standard_folders(folder_path, dry_run=False):
     """Create standard subfolders if they don't exist."""
     logger = logging.getLogger(__name__)
     created_count = 0
@@ -287,8 +437,11 @@ def create_standard_folders(folder_path):
         
         if not os.path.exists(subfolder_path):
             try:
-                os.makedirs(subfolder_path, exist_ok=True)
-                logger.info(f"[{get_timestamp()}] ✅ Created: {subfolder_path}")
+                if dry_run:
+                    logger.info(f"[{get_timestamp()}] ✅ Would create: {subfolder_path}")
+                else:
+                    os.makedirs(subfolder_path, exist_ok=True)
+                    logger.info(f"[{get_timestamp()}] ✅ Created: {subfolder_path}")
                 created_count += 1
             except Exception as e:
                 logger.error(f"[{get_timestamp()}] ❌ Failed to create: {subfolder_path} | Error: {e}")
@@ -297,7 +450,7 @@ def create_standard_folders(folder_path):
     
     return created_count
 
-def sort_files_in_folder(folder_path):
+def sort_files_in_folder(folder_path, allow_overwrite=False, dry_run=False):
     """Sort files within folder by extension into standard subfolders."""
     logger = logging.getLogger(__name__)
     moved_count = 0
@@ -327,8 +480,8 @@ def sort_files_in_folder(folder_path):
                 dest_folder_path = os.path.join(folder_path, target_subfolder)
                 dest_file_path = os.path.join(dest_folder_path, filename)
                 
-                result = move_file_safely(file_path, dest_file_path, "EXT")
-                if result == "moved":
+                result = move_file_safely(file_path, dest_file_path, "EXT", allow_overwrite, dry_run)
+                if result in ["moved", "would_move", "would_overwrite"]:
                     moved_count += 1
                 elif result == "skipped":
                     skipped_count += 1
@@ -338,7 +491,7 @@ def sort_files_in_folder(folder_path):
     
     return moved_count, skipped_count
 
-def process_root_files(root_dir, folder_list):
+def process_root_files(root_dir, folder_list, allow_overwrite=False, dry_run=False):
     """Process files in root directory using folder-first isolation."""
     logger = logging.getLogger(__name__)
     
@@ -373,8 +526,8 @@ def process_root_files(root_dir, folder_list):
                     dest_path = os.path.join(folder_path, filename)
                     
                     # Move file
-                    result = move_file_safely(file_path, dest_path, match_type)
-                    if result == "moved":
+                    result = move_file_safely(file_path, dest_path, match_type, allow_overwrite, dry_run)
+                    if result in ["moved", "would_move", "would_overwrite"]:
                         stats['moved'] += 1
                     elif result == "skipped":
                         stats['skipped'] += 1
@@ -392,51 +545,40 @@ def process_root_files(root_dir, folder_list):
     
     return stats
 
-def main():
-    """Main function to orchestrate the folder fixing process."""
-    logger = setup_logging()
-    start_time = time.time()
+def execute_mode(mode, root_dir, folder_list, dry_run=False):
+    """Execute the specified mode logic."""
+    logger = logging.getLogger(__name__)
     
-    # Get current directory
-    root_dir = os.getcwd()
-    
-    logger.info(f"[{get_timestamp()}] 🚀 Template Folder Fixer v1.0 started")
-    logger.info(f"[{get_timestamp()}] 📂 Working directory: {root_dir}")
-    
-    # Safety prompt
-    print("\n" + "="*80)
-    print("⚠️  WARNING: This script will organize files in the current directory.")
-    print("Press Enter to continue or Ctrl+C to cancel...")
-    print("="*80)
-    try:
-        input()
-    except KeyboardInterrupt:
-        logger.info(f"[{get_timestamp()}] ❌ Script cancelled by user")
-        return
-    
-    # Initialize counters
     total_stats = {
         'moved': 0,
         'skipped': 0,
         'unmatched': 0, 
         'failed': 0,
-        'folders_created': 0
+        'folders_created': 0,
+        'cleanup_moved': 0
     }
     
-    # Step 1: Folder-First Isolation - Scan all subfolders
-    logger.info(f"[{get_timestamp()}] 📋 Step 1: Scanning subfolders...")
-    folder_list = scan_folders(root_dir)
+    # Mode 3 & 4: Cleanup phase
+    if mode in [3, 4]:
+        logger.info(f"[{get_timestamp()}] 🧹 Cleanup Phase: Removing standard subfolders...")
+        
+        for folder_name in folder_list:
+            folder_path = os.path.join(root_dir, folder_name)
+            if os.path.exists(folder_path):
+                cleanup_moved = cleanup_standard_folders(folder_path, dry_run)
+                total_stats['cleanup_moved'] += cleanup_moved
     
-    # Step 2: Root File Sorter (RFS)
-    logger.info(f"[{get_timestamp()}] 🔄 Step 2: Processing root-level files...")
-    rfs_stats = process_root_files(root_dir, folder_list)
+    # All modes: Root File Sorter
+    allow_overwrite = mode in [2, 4]  # Overwrite in modes 2 & 4
+    logger.info(f"[{get_timestamp()}] 🔄 Root File Sorter Phase...")
+    rfs_stats = process_root_files(root_dir, folder_list, allow_overwrite, dry_run)
     
     # Update total stats
     for key in ['moved', 'skipped', 'unmatched', 'failed']:
         total_stats[key] += rfs_stats[key]
     
-    # Step 3: Subfolder Structure Creation and File Sorting
-    logger.info(f"[{get_timestamp()}] 🏗️  Step 3: Processing subfolders...")
+    # All modes: Subfolder Structure Creation and File Sorting
+    logger.info(f"[{get_timestamp()}] 🏗️ Subfolder Structure Phase...")
     
     for folder_name in folder_list:
         folder_path = os.path.join(root_dir, folder_name)
@@ -445,13 +587,54 @@ def main():
             logger.info(f"[{get_timestamp()}] 📁 Processing subfolder: {folder_name}")
             
             # Create standard folders
-            created_count = create_standard_folders(folder_path)
+            created_count = create_standard_folders(folder_path, dry_run)
             total_stats['folders_created'] += created_count
             
             # Sort files by extension
-            moved_count, skipped_count = sort_files_in_folder(folder_path)
+            moved_count, skipped_count = sort_files_in_folder(folder_path, allow_overwrite, dry_run)
             total_stats['moved'] += moved_count
             total_stats['skipped'] += skipped_count
+    
+    return total_stats
+
+def main():
+    """Main function to orchestrate the folder fixing process."""
+    # Parse command line arguments
+    args = parse_arguments()
+    
+    # Get execution mode
+    mode = get_execution_mode(args)
+    
+    # Setup logging
+    logger = setup_logging(args.log_dir, mode, args.dry_run)
+    start_time = time.time()
+    
+    # Get current directory
+    root_dir = os.getcwd()
+    
+    logger.info(f"[{get_timestamp()}] 📂 Working directory: {root_dir}")
+    
+    # Safety prompt (unless disabled)
+    if not args.no_prompt:
+        dry_run_text = " (DRY RUN - No files will be modified)" if args.dry_run else ""
+        print(f"\n{'='*80}")
+        print(f"⚠️  WARNING: This script will organize files in the current directory{dry_run_text}")
+        print(f"Mode: {mode} - {EXECUTION_MODES[mode]}")
+        print("Press Enter to continue or Ctrl+C to cancel...")
+        print("="*80)
+        try:
+            input()
+        except KeyboardInterrupt:
+            logger.info(f"[{get_timestamp()}] ❌ Script cancelled by user")
+            return
+    
+    # Step 1: Folder-First Isolation - Scan all subfolders
+    logger.info(f"[{get_timestamp()}] 📋 Step 1: Scanning subfolders...")
+    folder_list = scan_folders(root_dir)
+    
+    # Step 2: Execute selected mode
+    logger.info(f"[{get_timestamp()}] 🎯 Step 2: Executing Mode {mode}...")
+    total_stats = execute_mode(mode, root_dir, folder_list, args.dry_run)
     
     # Calculate duration
     end_time = time.time()
@@ -459,16 +642,21 @@ def main():
     duration_str = f"{int(duration//60):02d}:{int(duration%60):02d}"
     
     # Final summary
-    logger.info(f"[{get_timestamp()}] ✅ Script completed successfully!")
+    dry_run_text = " (DRY RUN)" if args.dry_run else ""
+    logger.info(f"[{get_timestamp()}] ✅ Script completed successfully!{dry_run_text}")
     logger.info(f"[{get_timestamp()}] 📊 Summary:")
+    logger.info(f"[{get_timestamp()}]   • Mode executed: {mode} - {EXECUTION_MODES[mode]}")
     logger.info(f"[{get_timestamp()}]   • Files moved: {total_stats['moved']}")
     logger.info(f"[{get_timestamp()}]   • Files skipped: {total_stats['skipped']}")
     logger.info(f"[{get_timestamp()}]   • Files unmatched: {total_stats['unmatched']}")
     logger.info(f"[{get_timestamp()}]   • Move failures: {total_stats['failed']}")
     logger.info(f"[{get_timestamp()}]   • Folders created: {total_stats['folders_created']}")
+    if total_stats['cleanup_moved'] > 0:
+        logger.info(f"[{get_timestamp()}]   • Cleanup files moved: {total_stats['cleanup_moved']}")
     logger.info(f"[{get_timestamp()}]   • Duration: {duration_str}")
     
-    print(f"\n✅ Process completed! Check 'template_fixer_log.txt' for detailed logs.")
+    log_location = args.log_dir if args.log_dir else "current directory"
+    print(f"\n✅ Process completed!{dry_run_text} Check 'template_fixer_log.txt' in {log_location} for detailed logs.")
     print(f"📊 Files moved: {total_stats['moved']}, Skipped: {total_stats['skipped']}, Unmatched: {total_stats['unmatched']}")
 
 # =============================================================================
