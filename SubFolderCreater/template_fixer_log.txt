@@ -1,0 +1,399 @@
+[2025-06-15 02:52:23] 🚀 Template Folder Fixer v1.0 started
+[2025-06-15 02:52:23] 📂 Working directory: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2
+[2025-06-15 02:52:43] 📋 Step 1: Scanning subfolders...
+[2025-06-15 02:52:43] 📁 Scanned folders: 8 found
+[2025-06-15 02:52:43] 🔄 Step 2: Processing root-level files...
+[2025-06-15 02:52:43] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress.blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress.blend
+[2025-06-15 02:52:43] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.blend
+[2025-06-15 02:52:43] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress.blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress.blend
+[2025-06-15 02:52:43] 🏗️  Step 3: Processing subfolders...
+[2025-06-15 02:52:43] 📁 Processing subfolder: MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:52:43] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress.blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Maya-Blender files\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress.blend
+[2025-06-15 02:52:43] 📁 Processing subfolder: MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:52:43] 📁 Processing subfolder: MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:52:43] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Maya-Blender files\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.blend
+[2025-06-15 02:52:43] 📁 Processing subfolder: MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:52:43] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress.blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Maya-Blender files\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress.blend
+[2025-06-15 02:52:43] 📁 Processing subfolder: Meridian1_U601_0_Boy_Bottom_Cheer_Pants
+[2025-06-15 02:52:43] ✅ Created: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Maya-Blender files
+[2025-06-15 02:52:43] ✅ Created: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\MD files
+[2025-06-15 02:52:43] ✅ Created: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Output format files
+[2025-06-15 02:52:43] 📁 Processing subfolder: MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Maya-Blender files
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MD files
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Output format files
+[2025-06-15 02:52:43] 📁 Processing subfolder: MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Maya-Blender files
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MD files
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Output format files
+[2025-06-15 02:52:43] 📁 Processing subfolder: New folder
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\Maya-Blender files
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\MD files
+[2025-06-15 02:52:43] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\Output format files
+[2025-06-15 02:52:43] ✅ Script completed successfully!
+[2025-06-15 02:52:43] 📊 Summary:
+[2025-06-15 02:52:43]   • Files moved: 6
+[2025-06-15 02:52:43]   • Files skipped: 0
+[2025-06-15 02:52:43]   • Files unmatched: 0
+[2025-06-15 02:52:43]   • Move failures: 0
+[2025-06-15 02:52:43]   • Folders created: 3
+[2025-06-15 02:52:43]   • Duration: 00:19
+[2025-06-15 02:53:32] 🚀 Template Folder Fixer v1.0 started
+[2025-06-15 02:53:32] 📂 Working directory: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2
+[2025-06-15 02:53:37] 📋 Step 1: Scanning subfolders...
+[2025-06-15 02:53:37] 📁 Scanned folders: 9 found
+[2025-06-15 02:53:37] 🔄 Step 2: Processing root-level files...
+[2025-06-15 02:53:37] 🏗️  Step 3: Processing subfolders...
+[2025-06-15 02:53:37] 📁 Processing subfolder: MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:53:37] 📁 Processing subfolder: MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:53:37] 📁 Processing subfolder: MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:53:37] 📁 Processing subfolder: MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:53:37] 📁 Processing subfolder: Meridian1_U601_0_Boy_Bottom_Cheer_Pants
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Maya-Blender files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\MD files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Output format files
+[2025-06-15 02:53:37] 📁 Processing subfolder: MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Maya-Blender files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MD files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Output format files
+[2025-06-15 02:53:37] 📁 Processing subfolder: MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Maya-Blender files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MD files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Output format files
+[2025-06-15 02:53:37] 📁 Processing subfolder: New folder
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\Maya-Blender files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\MD files
+[2025-06-15 02:53:37] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\Output format files
+[2025-06-15 02:53:37] 📁 Processing subfolder: New folder (2)
+[2025-06-15 02:53:37] ✅ Created: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\Maya-Blender files
+[2025-06-15 02:53:37] ✅ Created: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\MD files
+[2025-06-15 02:53:37] ✅ Created: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\Output format files
+[2025-06-15 02:53:37] ✅ Script completed successfully!
+[2025-06-15 02:53:37] 📊 Summary:
+[2025-06-15 02:53:37]   • Files moved: 0
+[2025-06-15 02:53:37]   • Files skipped: 0
+[2025-06-15 02:53:37]   • Files unmatched: 0
+[2025-06-15 02:53:37]   • Move failures: 0
+[2025-06-15 02:53:37]   • Folders created: 3
+[2025-06-15 02:53:37]   • Duration: 00:04
+[2025-06-15 02:54:44] 🚀 Template Folder Fixer v1.0 started
+[2025-06-15 02:54:44] 📂 Working directory: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2
+[2025-06-15 02:54:48] 📋 Step 1: Scanning subfolders...
+[2025-06-15 02:54:48] 📁 Scanned folders: 9 found
+[2025-06-15 02:54:48] 🔄 Step 2: Processing root-level files...
+[2025-06-15 02:54:48] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress .blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress .blend
+[2025-06-15 02:54:48] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.blend1 → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.blend1
+[2025-06-15 02:54:48] 🏗️  Step 3: Processing subfolders...
+[2025-06-15 02:54:48] 📁 Processing subfolder: MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:54:48] 📁 Processing subfolder: MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:54:48] 📁 Processing subfolder: MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:54:48] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress .blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Maya-Blender files\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress .blend
+[2025-06-15 02:54:48] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.blend1 → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Maya-Blender files\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.blend1
+[2025-06-15 02:54:48] 📁 Processing subfolder: MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:54:48] 📁 Processing subfolder: Meridian1_U601_0_Boy_Bottom_Cheer_Pants
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Maya-Blender files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\MD files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Output format files
+[2025-06-15 02:54:48] 📁 Processing subfolder: MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Maya-Blender files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MD files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Output format files
+[2025-06-15 02:54:48] 📁 Processing subfolder: MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Maya-Blender files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MD files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Output format files
+[2025-06-15 02:54:48] 📁 Processing subfolder: New folder
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\Maya-Blender files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\MD files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\Output format files
+[2025-06-15 02:54:48] 📁 Processing subfolder: New folder (2)
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\Maya-Blender files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\MD files
+[2025-06-15 02:54:48] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\Output format files
+[2025-06-15 02:54:48] ✅ Script completed successfully!
+[2025-06-15 02:54:48] 📊 Summary:
+[2025-06-15 02:54:48]   • Files moved: 4
+[2025-06-15 02:54:48]   • Files skipped: 0
+[2025-06-15 02:54:48]   • Files unmatched: 0
+[2025-06-15 02:54:48]   • Move failures: 0
+[2025-06-15 02:54:48]   • Folders created: 0
+[2025-06-15 02:54:48]   • Duration: 00:04
+[2025-06-15 02:56:05] 🚀 Template Folder Fixer v1.0 started
+[2025-06-15 02:56:05] 📂 Working directory: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2
+[2025-06-15 02:56:08] 📋 Step 1: Scanning subfolders...
+[2025-06-15 02:56:08] 📁 Scanned folders: 9 found
+[2025-06-15 02:56:08] 🔄 Step 2: Processing root-level files...
+[2025-06-15 02:56:08] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress.blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress.blend
+[2025-06-15 02:56:08] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress.blend1 → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress.blend1
+[2025-06-15 02:56:08] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.blend1 → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.blend1
+[2025-06-15 02:56:08] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress.blend1 → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress.blend1
+[2025-06-15 02:56:08] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants.blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Meridian1_U601_0_Boy_Bottom_Cheer_Pants.blend
+[2025-06-15 02:56:08] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants.blend1 → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Meridian1_U601_0_Boy_Bottom_Cheer_Pants.blend1
+[2025-06-15 02:56:08] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.blend
+[2025-06-15 02:56:08] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.blend1 → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.blend1
+[2025-06-15 02:56:08] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.fbx → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.fbx
+[2025-06-15 02:56:08] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.blend
+[2025-06-15 02:56:08] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.blend1 → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.blend1
+[2025-06-15 02:56:08] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.fbx → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.fbx
+[2025-06-15 02:56:08] 🏗️  Step 3: Processing subfolders...
+[2025-06-15 02:56:08] 📁 Processing subfolder: MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:56:08] 📁 Processing subfolder: MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:56:08] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress.blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Maya-Blender files\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress.blend
+[2025-06-15 02:56:08] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress.blend1 → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Maya-Blender files\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress.blend1
+[2025-06-15 02:56:08] 📁 Processing subfolder: MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:56:08] [EXT] ⚠️ File already exists, skipping: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.blend1
+[2025-06-15 02:56:08] 📁 Processing subfolder: MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:56:08] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress.blend1 → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Maya-Blender files\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress.blend1
+[2025-06-15 02:56:08] 📁 Processing subfolder: Meridian1_U601_0_Boy_Bottom_Cheer_Pants
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Maya-Blender files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\MD files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Output format files
+[2025-06-15 02:56:08] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Meridian1_U601_0_Boy_Bottom_Cheer_Pants.blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Maya-Blender files\Meridian1_U601_0_Boy_Bottom_Cheer_Pants.blend
+[2025-06-15 02:56:08] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Meridian1_U601_0_Boy_Bottom_Cheer_Pants.blend1 → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Maya-Blender files\Meridian1_U601_0_Boy_Bottom_Cheer_Pants.blend1
+[2025-06-15 02:56:08] 📁 Processing subfolder: MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Maya-Blender files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MD files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Output format files
+[2025-06-15 02:56:08] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Maya-Blender files\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.blend
+[2025-06-15 02:56:08] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.blend1 → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Maya-Blender files\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.blend1
+[2025-06-15 02:56:08] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.fbx → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Maya-Blender files\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.fbx
+[2025-06-15 02:56:08] 📁 Processing subfolder: MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Maya-Blender files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MD files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Output format files
+[2025-06-15 02:56:08] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.blend → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Maya-Blender files\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.blend
+[2025-06-15 02:56:08] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.blend1 → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Maya-Blender files\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.blend1
+[2025-06-15 02:56:08] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.fbx → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Maya-Blender files\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.fbx
+[2025-06-15 02:56:08] 📁 Processing subfolder: New folder
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\Maya-Blender files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\MD files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\Output format files
+[2025-06-15 02:56:08] 📁 Processing subfolder: New folder (2)
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\Maya-Blender files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\MD files
+[2025-06-15 02:56:08] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\Output format files
+[2025-06-15 02:56:08] ✅ Script completed successfully!
+[2025-06-15 02:56:08] 📊 Summary:
+[2025-06-15 02:56:08]   • Files moved: 23
+[2025-06-15 02:56:08]   • Files skipped: 1
+[2025-06-15 02:56:08]   • Files unmatched: 0
+[2025-06-15 02:56:08]   • Move failures: 0
+[2025-06-15 02:56:08]   • Folders created: 0
+[2025-06-15 02:56:08]   • Duration: 00:03
+[2025-06-15 02:57:04] 🚀 Template Folder Fixer v1.0 started
+[2025-06-15 02:57:04] 📂 Working directory: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2
+[2025-06-15 02:57:06] 📋 Step 1: Scanning subfolders...
+[2025-06-15 02:57:06] 📁 Scanned folders: 9 found
+[2025-06-15 02:57:06] 🔄 Step 2: Processing root-level files...
+[2025-06-15 02:57:06] 🏗️  Step 3: Processing subfolders...
+[2025-06-15 02:57:06] 📁 Processing subfolder: MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:57:06] 📁 Processing subfolder: MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:57:06] 📁 Processing subfolder: MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:57:06] [EXT] ⚠️ File already exists, skipping: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.blend1
+[2025-06-15 02:57:06] 📁 Processing subfolder: MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:57:06] 📁 Processing subfolder: Meridian1_U601_0_Boy_Bottom_Cheer_Pants
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Maya-Blender files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\MD files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Output format files
+[2025-06-15 02:57:06] 📁 Processing subfolder: MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Maya-Blender files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MD files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Output format files
+[2025-06-15 02:57:06] 📁 Processing subfolder: MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Maya-Blender files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MD files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Output format files
+[2025-06-15 02:57:06] 📁 Processing subfolder: New folder
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\Maya-Blender files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\MD files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\Output format files
+[2025-06-15 02:57:06] 📁 Processing subfolder: New folder (2)
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\Maya-Blender files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\MD files
+[2025-06-15 02:57:06] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\Output format files
+[2025-06-15 02:57:06] ✅ Script completed successfully!
+[2025-06-15 02:57:06] 📊 Summary:
+[2025-06-15 02:57:06]   • Files moved: 0
+[2025-06-15 02:57:06]   • Files skipped: 1
+[2025-06-15 02:57:06]   • Files unmatched: 0
+[2025-06-15 02:57:06]   • Move failures: 0
+[2025-06-15 02:57:06]   • Folders created: 0
+[2025-06-15 02:57:06]   • Duration: 00:01
+[2025-06-15 02:58:21] 🚀 Template Folder Fixer v1.0 started
+[2025-06-15 02:58:21] 📂 Working directory: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2
+[2025-06-15 02:58:24] 📋 Step 1: Scanning subfolders...
+[2025-06-15 02:58:24] 📁 Scanned folders: 9 found
+[2025-06-15 02:58:24] 🔄 Step 2: Processing root-level files...
+[2025-06-15 02:58:24] [BASE+VER] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403RB_0_Girl.glb
+[2025-06-15 02:58:24] 🏗️  Step 3: Processing subfolders...
+[2025-06-15 02:58:24] 📁 Processing subfolder: MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:58:24] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403RB_0_Girl.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Output format files\MERIDIAN1_U403RB_0_Girl.glb
+[2025-06-15 02:58:24] 📁 Processing subfolder: MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:58:24] 📁 Processing subfolder: MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:58:24] [EXT] ⚠️ File already exists, skipping: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.blend1
+[2025-06-15 02:58:24] 📁 Processing subfolder: MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:58:24] 📁 Processing subfolder: Meridian1_U601_0_Boy_Bottom_Cheer_Pants
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Maya-Blender files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\MD files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Output format files
+[2025-06-15 02:58:24] 📁 Processing subfolder: MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Maya-Blender files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MD files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Output format files
+[2025-06-15 02:58:24] 📁 Processing subfolder: MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Maya-Blender files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MD files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Output format files
+[2025-06-15 02:58:24] 📁 Processing subfolder: New folder
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\Maya-Blender files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\MD files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\Output format files
+[2025-06-15 02:58:24] 📁 Processing subfolder: New folder (2)
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\Maya-Blender files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\MD files
+[2025-06-15 02:58:24] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\Output format files
+[2025-06-15 02:58:24] ✅ Script completed successfully!
+[2025-06-15 02:58:24] 📊 Summary:
+[2025-06-15 02:58:24]   • Files moved: 2
+[2025-06-15 02:58:24]   • Files skipped: 1
+[2025-06-15 02:58:24]   • Files unmatched: 0
+[2025-06-15 02:58:24]   • Move failures: 0
+[2025-06-15 02:58:24]   • Folders created: 0
+[2025-06-15 02:58:24]   • Duration: 00:02
+[2025-06-15 02:58:48] 🚀 Template Folder Fixer v1.0 started
+[2025-06-15 02:58:48] 📂 Working directory: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2
+[2025-06-15 02:58:51] 📋 Step 1: Scanning subfolders...
+[2025-06-15 02:58:51] 📁 Scanned folders: 9 found
+[2025-06-15 02:58:51] 🔄 Step 2: Processing root-level files...
+[2025-06-15 02:58:51] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress.glb
+[2025-06-15 02:58:51] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress.glb
+[2025-06-15 02:58:51] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.glb
+[2025-06-15 02:58:51] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress.glb
+[2025-06-15 02:58:51] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Meridian1_U601_0_Boy_Bottom_Cheer_Pants.glb
+[2025-06-15 02:58:51] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.glb
+[2025-06-15 02:58:51] [FULL] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.glb
+[2025-06-15 02:58:51] 🏗️  Step 3: Processing subfolders...
+[2025-06-15 02:58:51] 📁 Processing subfolder: MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:58:51] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress\Output format files\MERIDIAN1_U403RB_0_Girl Top Fitted Uniform Dress.glb
+[2025-06-15 02:58:51] 📁 Processing subfolder: MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:58:51] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress\Output format files\MERIDIAN1_U403RB_1_Girl Top Fitted Uniform Dress.glb
+[2025-06-15 02:58:51] 📁 Processing subfolder: MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:58:51] [EXT] ⚠️ File already exists, skipping: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.blend1
+[2025-06-15 02:58:51] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress\Output format files\MERIDIAN1_U403R_0_Girl Top Fitted Uniform Dress.glb
+[2025-06-15 02:58:51] 📁 Processing subfolder: MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Maya-Blender files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\MD files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Output format files
+[2025-06-15 02:58:51] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress\Output format files\MERIDIAN1_U403R_1_Girl Top Fitted Uniform Dress.glb
+[2025-06-15 02:58:51] 📁 Processing subfolder: Meridian1_U601_0_Boy_Bottom_Cheer_Pants
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Maya-Blender files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\MD files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Output format files
+[2025-06-15 02:58:51] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Meridian1_U601_0_Boy_Bottom_Cheer_Pants.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\Meridian1_U601_0_Boy_Bottom_Cheer_Pants\Output format files\Meridian1_U601_0_Boy_Bottom_Cheer_Pants.glb
+[2025-06-15 02:58:51] 📁 Processing subfolder: MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Maya-Blender files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MD files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Output format files
+[2025-06-15 02:58:51] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger\Output format files\MERIDIAN1_U604_0_Boy Bottom Relaxed Fit Jogger.glb
+[2025-06-15 02:58:51] 📁 Processing subfolder: MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Maya-Blender files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MD files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Output format files
+[2025-06-15 02:58:51] [EXT] 📁 Moved: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.glb → E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger\Output format files\MERIDIAN1_U605_0_Boy_Bottom_Slim_Fit_Jogger.glb
+[2025-06-15 02:58:51] 📁 Processing subfolder: New folder
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\Maya-Blender files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\MD files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder\Output format files
+[2025-06-15 02:58:51] 📁 Processing subfolder: New folder (2)
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\Maya-Blender files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\MD files
+[2025-06-15 02:58:51] ⚠️ Already exists: E:\PYTHON project\Folder stracturue for Rebel drive\Rebel-Drive-Folder-and-Files\Testing\Meridian2\New folder (2)\Output format files
+[2025-06-15 02:58:51] ✅ Script completed successfully!
+[2025-06-15 02:58:51] 📊 Summary:
+[2025-06-15 02:58:51]   • Files moved: 14
+[2025-06-15 02:58:51]   • Files skipped: 1
+[2025-06-15 02:58:51]   • Files unmatched: 0
+[2025-06-15 02:58:51]   • Move failures: 0
+[2025-06-15 02:58:51]   • Folders created: 0
+[2025-06-15 02:58:51]   • Duration: 00:03
