@@ -3,8 +3,8 @@
 
 VSVersionInfo(
       ffi=FixedFileInfo(
-      filevers=(1, 2, 2, 0),
-      prodvers=(1, 2, 2, 0),
+      filevers=(1, 2, 3, 0),
+      prodvers=(1, 2, 3, 0),
     mask=0x3f,
     flags=0x0,
     OS=0x40004,
@@ -19,12 +19,12 @@ VSVersionInfo(
         [
           StringStruct('CompanyName', 'Divyansh Jaiswal'),
           StringStruct('FileDescription', 'Template Folder Fixer'),
-                     StringStruct('FileVersion', '1.2.2.0'),
+                     StringStruct('FileVersion', '1.2.3.0'),
           StringStruct('InternalName', 'Template_Folder_fixer'),
           StringStruct('LegalCopyright', '© 2025 Divyansh Jaiswal'),
           StringStruct('OriginalFilename', 'Template_Folder_fixer.exe'),
           StringStruct('ProductName', 'Template Folder Fixer Tool'),
-                     StringStruct('ProductVersion', '1.2.2.0'),
+                     StringStruct('ProductVersion', '1.2.3.0'),
         ]
       )
     ]),

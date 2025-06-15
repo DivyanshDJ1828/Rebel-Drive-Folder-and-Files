@@ -1,4 +1,4 @@
-# 🧹 Template\_Folder\_fixer\_v1.2.2.md
+# 🧹 Template\_Folder\_fixer\_v1.2.3.md
 
 ## 🌟 Objective
 
@@ -14,7 +14,7 @@ The script should:
 ## 👤 Publisher Info
 
 * **Author**: Divyansh Jaiswal
-* **Version**: 1.2.2
+* **Version**: 1.2.3
 * **Created On**: 2025-06-15
 
 ## 🔧 Functional Requirements
@@ -50,7 +50,10 @@ The script should:
   * Preserve `original filename + extension`
   * Do not modify filenames
   * Move only to verified existing folders
-  * If destination file exists → skip + log (except in overwrite mode)
+  * If destination file exists:
+
+    * In **mode 1 or 3** → skip (unless file differs, then rename with \_1, \_2)
+    * In **mode 2 or 4** → overwrite
 
 * **Logging**:
 
@@ -107,6 +110,7 @@ The script should:
 * Must support filenames with spaces, uppercase, multiple underscores
 * Skip hidden/system files
 * Skip folders that are already subfolders (e.g. `MD files`)
+* After execution, the command prompt window should **not auto-exit**
 
 ### ✅ Execution Modes (selectable via CLI or keyboard on .exe)
 
@@ -122,19 +126,29 @@ The script should:
 
 3. **Cleanup + Normal Mode** (`--clean`)
 
-   * Recursively flatten ALL subfolders inside each component folder
-   * Move files from all depths to component folder (skip if identical exists)
-   * Delete all internal folders inside the component folder after file recovery
+   * Recursively flatten **ALL** subfolders inside each component folder
+   * Move files from all depths to component folder
+
+     * If file already exists in component folder → **do not overwrite**, skip or rename with `_1`, `_2`, etc. if different
+     * If same file exists in root, **retain both in their place**
+     * If file is nested in sub-subfolder, and has name conflict with component folder, **rename** it and keep in component
+   * Delete all internal folders after file recovery
    * Then run Mode 1 logic
 
 4. **Reset + Overwrite Mode** (`--reset-overwrite`)
 
-   * Same as Mode 3 but overwrite conflicting files during cleanup
+   * Same as Mode 3
+   * File conflicts:
+
+     * If duplicate name in component and subfolder → preserve unsuffixed file, delete suffixed copies
+     * Files in root override component files
+   * Overwrite allowed during cleanup phase
    * Then run Mode 2 logic
 
 ### ✅ CLI & Interactive Support
 
 * `--mode 1|2|3|4`: Choose execution mode via command line
+* `--overwrite`, `--clean`, `--reset-overwrite`: Shorthand flags for modes
 * `--dry-run`: Simulates operations without modifying files
 * `--no-prompt`: Skip interactive confirmation
 * `--log-dir <path>`: Specify custom directory for log output
@@ -161,6 +175,11 @@ Enter your choice (1-4):
 * If no folder matched → log `⛔ No matching folder found`
 * Folders are deleted only if empty after all file operations
 * Files are renamed with suffixes `_1`, `_2`, etc. in case of conflicts
+* In Mode 4, if `file.blend`, `file_1.blend`, `file_2.blend` exist:
+
+  * Only `file.blend` is preserved
+  * All others are deleted
+  * Then moved to correct folder
 
 ## 🧬 Base Data (Dormant)
 
@@ -186,7 +205,7 @@ These will be injected but not yet validated against.
 
 ## 📌 Versioning
 
-* Python Version: `1.2.2`
+* Python Version: `1.2.3`
 * Filename: `Template_Folder_fixer.py`
 * Publisher: Divyansh Jaiswal
 * Source Migration: `Create_Standard_Subfolders.bat` → Python

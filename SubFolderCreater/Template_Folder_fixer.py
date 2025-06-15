@@ -2,11 +2,11 @@
 """
 =============================================================================
 Script Name: Template_Folder_fixer.py
-Version: 1.2.2
+Version: 1.2.3
 Author: Divyansh Jaiswal
 Created On: 2025-06-15
 Source Migration: Create_Standard_Subfolders.bat → Python
-Spec Source: Template_Folder_fixer_v1.2.2.md
+Spec Source: Template_Folder_fixer_v1.2.3.md
 
 Purpose: Automate organization of production files through:
 1. Root File Sorter (RFS): Move misplaced files using priority-based matching
@@ -17,7 +17,7 @@ Requirements: Python 3.11+, Standard libraries only
 =============================================================================
 """
 
-__version__ = "1.2.2"
+__version__ = "1.2.3"
 __author__ = "Divyansh Jaiswal"
 __description__ = "Template folder fixer for standardizing design folder structure with safe sorting, cleanup, and logging logic."
 
@@ -321,14 +321,42 @@ def files_are_identical(file1, file2):
     except (OSError, FileNotFoundError):
         return False
 
-def resolve_filename_collision(dest_path, allow_overwrite=False):
-    """Resolve filename collisions by adding _1, _2, etc. suffixes if overwrite is disabled."""
+def resolve_filename_collision(dest_path, allow_overwrite=False, mode=1):
+    """Resolve filename collisions by adding _1, _2, etc. suffixes if overwrite is disabled.
+    In Mode 4, removes existing suffixed files and preserves only the original name."""
     logger = logging.getLogger(__name__)
     
-    if not os.path.exists(dest_path) or allow_overwrite:
+    if not os.path.exists(dest_path):
         return dest_path
     
-    # Generate unique filename with suffix
+    if allow_overwrite:
+        return dest_path
+    
+    # Mode 4 special handling: Remove suffixed versions and use original name
+    if mode == 4:
+        base_dir = os.path.dirname(dest_path)
+        filename = os.path.basename(dest_path)
+        name, ext = os.path.splitext(filename)
+        
+        # Find and remove all suffixed versions (_1, _2, etc.)
+        suffixed_files = []
+        for i in range(1, 1000):
+            suffixed_file = os.path.join(base_dir, f"{name}_{i}{ext}")
+            if os.path.exists(suffixed_file):
+                suffixed_files.append(suffixed_file)
+        
+        # Remove suffixed files
+        for suffixed_file in suffixed_files:
+            try:
+                os.remove(suffixed_file)
+                logger.info(f"[{get_timestamp()}] 🗑️ Removed suffixed duplicate: {os.path.basename(suffixed_file)}")
+            except Exception as e:
+                logger.error(f"[{get_timestamp()}] ❌ Failed to remove suffixed file {suffixed_file}: {e}")
+        
+        logger.debug(f"[{get_timestamp()}] 🔄 Mode 4: Cleaned suffixed files, using original name: {filename}")
+        return dest_path
+    
+    # Standard collision resolution for modes 1 and 3
     base_dir = os.path.dirname(dest_path)
     filename = os.path.basename(dest_path)
     name, ext = os.path.splitext(filename)
@@ -345,7 +373,7 @@ def resolve_filename_collision(dest_path, allow_overwrite=False):
         counter += 1
         if counter > 999:  # Safety limit
             logger.error(f"[{get_timestamp()}] ❌ Too many filename collisions for: {filename}")
-            return dest_path
+            return None  # Return None to indicate failure
 
 # =============================================================================
 # CORE FUNCTIONS
@@ -478,11 +506,14 @@ def collect_all_files_recursively(folder_path, cleanup_mode=False):
     logger.debug(f"[{get_timestamp()}] 📊 Collection complete: {len(all_files)} files, {len(all_folders)} folders")
     return all_files, all_folders
 
-def cleanup_subfolders_recursively(folder_path, allow_overwrite=False, dry_run=False):
-    """Recursively cleanup ALL subfolders and move files to component folder."""
+def cleanup_subfolders_recursively(folder_path, mode=3, dry_run=False):
+    """Recursively cleanup ALL subfolders and move files to component folder.
+    Mode 3: Skip conflicts, rename with suffixes if different
+    Mode 4: Overwrite conflicts, remove suffixed duplicates"""
     logger = logging.getLogger(__name__)
     moved_count = 0
     skipped_count = 0
+    allow_overwrite = mode == 4
     
     # Collect all files and folders from subfolders recursively (cleanup mode = process ALL folders)
     all_files, all_folders = collect_all_files_recursively(folder_path, cleanup_mode=True)
@@ -493,6 +524,18 @@ def cleanup_subfolders_recursively(folder_path, allow_overwrite=False, dry_run=F
     
     logger.info(f"[{get_timestamp()}] 🧹 Found {len(all_files)} files to move from subfolders")
     logger.debug(f"[{get_timestamp()}] 🧹 Found {len(all_folders)} subfolders to process")
+    logger.debug(f"[{get_timestamp()}] 🎯 Cleanup Mode: {mode} ({'Overwrite' if allow_overwrite else 'Safe'})")
+    
+    # Check for root files that should take precedence
+    root_files = set()
+    try:
+        for item in os.listdir(os.path.dirname(folder_path)):
+            item_path = os.path.join(os.path.dirname(folder_path), item)
+            if os.path.isfile(item_path):
+                root_files.add(os.path.basename(item))
+        logger.debug(f"[{get_timestamp()}] 🔍 Found {len(root_files)} files in root directory")
+    except Exception as e:
+        logger.debug(f"[{get_timestamp()}] 🔍 Could not scan root directory: {e}")
     
     # Move all collected files to the component folder
     for file_info in all_files:
@@ -500,9 +543,20 @@ def cleanup_subfolders_recursively(folder_path, allow_overwrite=False, dry_run=F
         filename = file_info['filename']
         dest_path = os.path.join(folder_path, filename)
         
-        # Handle filename conflicts using the collision resolution function
-        if not allow_overwrite and os.path.exists(dest_path) and not files_are_identical(source_path, dest_path):
-            dest_path = resolve_filename_collision(dest_path, allow_overwrite)
+        # Check if file exists in root - if so, skip moving in Mode 3
+        if mode == 3 and filename in root_files:
+            logger.info(f"[{get_timestamp()}] 🔄 Mode 3: Keeping both files - root takes precedence: {filename}")
+            skipped_count += 1
+            continue
+        
+        # Handle filename collisions using the enhanced collision resolution function
+        if os.path.exists(dest_path) and not files_are_identical(source_path, dest_path):
+            resolved_path = resolve_filename_collision(dest_path, allow_overwrite, mode)
+            if resolved_path is None:
+                logger.error(f"[{get_timestamp()}] ❌ Too many collisions, skipping: {filename}")
+                skipped_count += 1
+                continue
+            dest_path = resolved_path
         
         # Move file with enhanced logging
         result = move_file_safely(source_path, dest_path, "CLEANUP", allow_overwrite, dry_run)
@@ -575,11 +629,12 @@ def create_standard_folders(folder_path, dry_run=False):
     
     return created_count
 
-def sort_files_in_folder(folder_path, allow_overwrite=False, dry_run=False):
+def sort_files_in_folder(folder_path, mode=1, dry_run=False):
     """Sort files within folder by extension into standard subfolders."""
     logger = logging.getLogger(__name__)
     moved_count = 0
     skipped_count = 0
+    allow_overwrite = mode in [2, 4]
     
     try:
         for filename in os.listdir(folder_path):
@@ -606,10 +661,13 @@ def sort_files_in_folder(folder_path, allow_overwrite=False, dry_run=False):
                 dest_file_path = os.path.join(dest_folder_path, filename)
                 
                 # Handle filename collisions for extension-based sorting
-                if not allow_overwrite and os.path.exists(dest_file_path):
-                    # Check if files are identical first
-                    if not files_are_identical(file_path, dest_file_path):
-                        dest_file_path = resolve_filename_collision(dest_file_path, allow_overwrite)
+                if os.path.exists(dest_file_path) and not files_are_identical(file_path, dest_file_path):
+                    resolved_path = resolve_filename_collision(dest_file_path, allow_overwrite, mode)
+                    if resolved_path is None:
+                        logger.error(f"[{get_timestamp()}] ❌ Too many collisions, skipping: {filename}")
+                        skipped_count += 1
+                        continue
+                    dest_file_path = resolved_path
                 
                 result = move_file_safely(file_path, dest_file_path, "EXT", allow_overwrite, dry_run)
                 if result in ["moved", "would_move", "would_overwrite"]:
@@ -622,9 +680,10 @@ def sort_files_in_folder(folder_path, allow_overwrite=False, dry_run=False):
     
     return moved_count, skipped_count
 
-def process_root_files(root_dir, folder_list, allow_overwrite=False, dry_run=False):
+def process_root_files(root_dir, folder_list, mode=1, dry_run=False):
     """Process files in root directory using folder-first isolation."""
     logger = logging.getLogger(__name__)
+    allow_overwrite = mode in [2, 4]
     
     stats = {
         'moved': 0,
@@ -658,10 +717,13 @@ def process_root_files(root_dir, folder_list, allow_overwrite=False, dry_run=Fal
                     dest_path = os.path.join(folder_path, filename)
                     
                     # Handle filename collisions for regular file moves
-                    if not allow_overwrite and os.path.exists(dest_path):
-                        # Check if files are identical first
-                        if not files_are_identical(file_path, dest_path):
-                            dest_path = resolve_filename_collision(dest_path, allow_overwrite)
+                    if os.path.exists(dest_path) and not files_are_identical(file_path, dest_path):
+                        resolved_path = resolve_filename_collision(dest_path, allow_overwrite, mode)
+                        if resolved_path is None:
+                            logger.error(f"[{get_timestamp()}] ❌ Too many collisions, skipping: {filename}")
+                            stats['failed'] += 1
+                            continue
+                        dest_path = resolved_path
                     
                     # Move file
                     result = move_file_safely(file_path, dest_path, match_type, allow_overwrite, dry_run)
@@ -698,7 +760,6 @@ def execute_mode(mode, root_dir, folder_list, dry_run=False):
     
     # Mode 3 & 4: Deep Cleanup phase
     if mode in [3, 4]:
-        allow_cleanup_overwrite = mode == 4  # Only mode 4 allows overwrite during cleanup
         logger.info(f"[{get_timestamp()}] 🧹 Deep Cleanup Phase: Recursively flattening subfolders...")
         
         for folder_name in folder_list:
@@ -706,15 +767,14 @@ def execute_mode(mode, root_dir, folder_list, dry_run=False):
             if os.path.exists(folder_path):
                 logger.info(f"[{get_timestamp()}] 🧹 Processing cleanup for: {folder_name}")
                 cleanup_moved, cleanup_skipped = cleanup_subfolders_recursively(
-                    folder_path, allow_cleanup_overwrite, dry_run
+                    folder_path, mode, dry_run
                 )
                 total_stats['cleanup_moved'] += cleanup_moved
                 total_stats['skipped'] += cleanup_skipped
     
     # All modes: Root File Sorter
-    allow_overwrite = mode in [2, 4]  # Overwrite in modes 2 & 4
     logger.info(f"[{get_timestamp()}] 🔄 Root File Sorter Phase...")
-    rfs_stats = process_root_files(root_dir, folder_list, allow_overwrite, dry_run)
+    rfs_stats = process_root_files(root_dir, folder_list, mode, dry_run)
     
     # Update total stats
     for key in ['moved', 'skipped', 'unmatched', 'failed']:
@@ -734,7 +794,7 @@ def execute_mode(mode, root_dir, folder_list, dry_run=False):
             total_stats['folders_created'] += created_count
             
             # Sort files by extension
-            moved_count, skipped_count = sort_files_in_folder(folder_path, allow_overwrite, dry_run)
+            moved_count, skipped_count = sort_files_in_folder(folder_path, mode, dry_run)
             total_stats['moved'] += moved_count
             total_stats['skipped'] += skipped_count
     
@@ -802,6 +862,12 @@ def main():
     debug_text = " Debug logging was enabled." if args.debug else ""
     print(f"\n✅ Process completed!{dry_run_text} Check 'template_fixer_log.txt' in {log_location} for detailed logs.{debug_text}")
     print(f"📊 Files moved: {total_stats['moved']}, Skipped: {total_stats['skipped']}, Unmatched: {total_stats['unmatched']}")
+    
+    # Prevent auto-exit in .exe builds
+    try:
+        input("\nPress Enter to exit...")
+    except (KeyboardInterrupt, EOFError):
+        pass
 
 # =============================================================================
 # SCRIPT ENTRY POINT
