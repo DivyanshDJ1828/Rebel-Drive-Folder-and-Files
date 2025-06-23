@@ -1,4 +1,4 @@
-[How to Run the Folder Fixer video](https://www.loom.com/share/aaf968ef1d3c49c7acab0264756f77c5)
+# [How to Run the Folder Fixer video](https://www.loom.com/share/aaf968ef1d3c49c7acab0264756f77c5)
 # 🛠 Template Folder Fixer – User Guide
 
 This tool automatically organizes your messy template folders into a clean and standard format.
